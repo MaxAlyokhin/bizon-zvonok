@@ -1,0 +1,15 @@
+{
+  "bizonToken": "XXXXX",
+  "zvonokAPIKey": "XXXXX",
+  "outputFromBizon": true,
+  "tasks": {
+    "task1": {
+      "ids": ["XXX:YY", "XXX:ZZ"],
+      "compaign": "111111111"
+    },
+    "task2": {
+      "ids": ["AAA:BB", "AAA:CC"],
+      "compaign": "222222222"
+    }
+  }
+}
