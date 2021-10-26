@@ -16,14 +16,28 @@ $ node index
   "bizonToken": "Токен для Бизона",
   "zvonokAPIKey": "API ключ для Zvonok",
   "outputFromBizon": true,
-  "tasks": {
-    "Задача 1": {
-      "ids": ["id Бизона", "id Бизона"],
-      "compaign": "Номер компании в Zvonok"
+  "accountsInBizon": {
+    "Аккаунт в Бизоне 1": {
+      "bizonToken": "Токен для Бизона",
+      "tasks": {
+        "task1": {
+          "ids": ["id Бизона", "id Бизона"],
+          "compaign": "Номер компании в Zvonok"
+        },
+        "task2": {
+          "ids": ["id Бизона", "id Бизона"],
+          "compaign": "Номер компании в Zvonok"
+        }
+      }
     },
-    "Задача 2": {
-      "ids": ["id Бизона", "id Бизона"],
-      "compaign": "Номер компании в Zvonok"
+    "Аккаунт в Бизоне 2": {
+      "bizonToken": "Токен для Бизона",
+      "tasks": {
+        "task1": {
+          "ids": ["id Бизона"],
+          "compaign": "Номер компании в Zvonok"
+        }
+      }
     }
   }
 }
