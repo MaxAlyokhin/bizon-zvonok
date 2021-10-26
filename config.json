@@ -1,5 +1,6 @@
 {
   "zvonokAPIKey": "XXX",
+  "outputFromBizon": true,
   "accountsInBizon": {
     "accountName1": {
       "bizonToken": "TOKEN1",
