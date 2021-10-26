@@ -1,15 +1,27 @@
 {
-  "bizonToken": "XXXXX",
-  "zvonokAPIKey": "XXXXX",
-  "outputFromBizon": true,
-  "tasks": {
-    "task1": {
-      "ids": ["XXX:YY", "XXX:ZZ"],
-      "compaign": "111111111"
+  "zvonokAPIKey": "XXX",
+  "accountsInBizon": {
+    "accountName1": {
+      "bizonToken": "TOKEN1",
+      "tasks": {
+        "task1": {
+          "ids": ["ID1", "ID2"],
+          "compaign": "COMPAIGN1"
+        },
+        "task2": {
+          "ids": ["ID3", "ID4"],
+          "compaign": "COMPAIGN2"
+        }
+      }
     },
-    "task2": {
-      "ids": ["AAA:BB", "AAA:CC"],
-      "compaign": "222222222"
+    "accountName2": {
+      "bizonToken": "TOKEN2",
+      "tasks": {
+        "task1": {
+          "ids": ["ID5"],
+          "compaign": "COMPAIGN3"
+        }
+      }
     }
   }
 }

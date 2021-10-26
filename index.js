@@ -4,11 +4,17 @@ const config = require('./config.json')
 
 async function phonesToZvonok(bizonToken, zvonokAPIKey, pageIds, compaign) {
   let phones = await allPhonesFromBizon(bizonToken, pageIds)
+  console.log(phones)
+
   let responceFromZvonok = await allPhonesToZvonok(zvonokAPIKey, compaign, phones)
   console.log(responceFromZvonok)
 }
 
-let tasks = Object.entries(config.tasks)
-tasks.forEach((task) => {
-  phonesToZvonok(config.bizonToken, config.zvonokAPIKey, task[1].ids, task[1].compaign)
+Object.keys(config.accountsInBizon).forEach((accountInBizon) => {
+  const bizonToken = config.accountsInBizon[accountInBizon].bizonToken
+
+  let tasks = Object.entries(config.accountsInBizon[accountInBizon].tasks)
+  tasks.forEach((task) => {
+    phonesToZvonok(bizonToken, config.zvonokAPIKey, task[1].ids, task[1].compaign)
+  })
 })
