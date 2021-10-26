@@ -13,7 +13,6 @@ $ node index
 
 ```json
 {
-  "bizonToken": "Токен для Бизона",
   "zvonokAPIKey": "API ключ для Zvonok",
   "outputFromBizon": true,
   "accountsInBizon": {
